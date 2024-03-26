@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border: 1px solid red;
+}
+body{
+    font-family: "Stylish", serif;
+    font-size: 15px;
+    background-image: url(../assets/img/fondo-motos.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+/*INDEX*/
+.main-back h1{
+    font-size: 100px;
+    color: blue;
+}
+.main-back{
+    width: 100%;
+    height: 1080px;
+    color: black;
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: cover;
+    background-position: right;
+    
+}
+.navbar{
+    width: 100%;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+}
+/*MOTOS*/
+.logos ul li img{
+    width: 100%;
+    height: 6.25rem;
+}
+.logos ul{
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    padding: 30px;
+    justify-content: center;
+    
+}
+.motos article{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 3.125rem;
+    padding: 50px;
+    text-align: center;
+}
+.motos article img{
+    width: 80%;
+    height: 80%;
+}
+/*ACCESORIOS*/
+.accesorios{
+    display: flex;
+    justify-content:space-evenly;
+    list-style:none;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.accesorios-2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 3.125rem;
+    padding: 50px;
+    text-align: center;
+}
+.accesorios-2 div img{
+    width: 80%;
+    height: 80%;
+    }
+/*CONTACTOS*/
+.contactos section{
+    margin: 50px;
+    padding: 50px;
+    background-color: cadetblue;
+}
+.form-contact{
+    list-style: none;
+}
+/*FINANCIACION*/
+.financiacion section{
+    background-color: cadetblue;
+}
+.imagenfinanciacion img{
+    width: 100%;
+    height: 300px;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    width: 100%;
+    font-size: 15px;
+}
+footer div ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 0px;
+}
+footer div h3{
+    font-size: 20px;
+}
+@media (max-width:1024px){
+    .main-back{
+        width: 100%;
+        height: 800px;
+    }
+    .motos article{
+        row-gap: 4.375rem;
+        margin-bottom: 20px;
+    }
+    .accesorios-2{
+        row-gap: 4.375rem;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px){
+/*responsive index*/
+    .main-back{
+        width: 100%;
+        height: 500px;
+    }
+    .main-back h1{
+        font-size: 50px;
+    }
+
+/* responsive motos*/
+    .motos article{
+        grid-template-columns: repeat(2,1fr);
+    }
+    header{
+        flex-direction: column;
+    }
+/*responsive accesorios*/
+    .accesorios li img{
+        width: 220px;
+        height: 220px;
+    }
+    .accesorios-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+/*footer*/
+    footer{
+        font-size: 12px;
+    }
+}
+@media (max-width:320px){
+    /*barra*/
+    
+    /*index*/
+    .main-back h1{
+        font-size: 20px;
+    }
+    .main-back div{
+        font-size: 10px;
+        color: red;
+        text-align: start;
+        border: 16px;
+    }
+    .main-back{
+        width: 100%;
+        height: 300px;
+    }
+    /*motos*/
+    .menu-nav{
+        flex-direction: column;
+        gap: .625rem;
+        text-align: center;
+    }
+    .logos ul{
+        flex-direction: column;
+    }
+    .motos article{
+        grid-template-columns: 1fr;
+        row-gap: 70px;
+    }
+    main{
+        text-align: center;
+    }
+    /*accesorios*/
+    .accesorios{
+        flex-direction: column;
+    }
+    .accesorios li img{
+        width: 250px;
+        height: 250px;
+    }
+    .accesorios-2{
+        grid-template-columns: 1fr;
+        row-gap: 4.375rem;
+    }
+    /*footer*/
+    footer{
+        flex-direction: column-reverse;
+    }
+    footer div h3{
+        font-size: 15px;
+    }
+}
