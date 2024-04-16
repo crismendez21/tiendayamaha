@@ -1,0 +1,12 @@
+/*CONTACTOS*/
+.contactos{
+    section{
+        margin: 50px;
+        padding: 50px;
+        background-color: $background-color1;
+        @include flexcontactos;  
+    }
+}
+.form-contact{
+    list-style: none;
+}

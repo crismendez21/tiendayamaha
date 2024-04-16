@@ -1,0 +1,19 @@
+/*FINANCIACION*/
+.financiacion{
+    section{
+        background-color: $background-color1;
+        padding: 20px;
+    }
+    .imagenfinanciacion{
+        img{
+            width: 100%;
+            height: 300px;
+        }
+    }
+    .ahorro{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    
+}

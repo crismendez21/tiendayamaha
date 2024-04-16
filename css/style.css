@@ -1,223 +1,366 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    border: 1px solid red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: "Stylish", serif;
-    font-size: 15px;
-    background-image: url(../assets/img/fondo-motos.png.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue;
+
+body {
+  font-family: "Stylish", serif;
+  font-size: 15px;
+  background-image: url(../assets/img/fondo-motos.png.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
 }
+
 /*INDEX*/
-.main-back h1{
-    font-size: 100px;
-    color: blue;
+header nav div {
+  padding: 15px;
 }
-.main-back{
-    width: 100%;
-    height: 1080px;
-    color: black;
-    background-image: url(../assets/img/fondo.jpg);
-    background-size: cover;
-    background-position: right;
-    
+
+.main-back {
+  width: 100%;
+  height: 1080px;
+  color: black;
+  background-image: url(../assets/img/fondo.jpg);
+  background-size: cover;
+  background-position: right;
+  padding: 15px;
 }
-.navbar{
-    width: 100%;
+.main-back h1 {
+  font-size: 100px;
+  color: blue;
 }
-.navbar-collapse{
-    justify-content: end;
+
+.navbar {
+  width: 100%;
 }
-.nav-link{
-    font-size: 20px;
-    color: white;
+
+.navbar-collapse {
+  justify-content: end;
 }
+
+.nav-link {
+  font-size: 20px;
+  color: white;
+}
+
 /*MOTOS*/
-.logos ul li img{
-    width: 100%;
-    height: 6.25rem;
+.logos ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  padding: 30px;
+  justify-content: center;
 }
-.logos ul{
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
-    padding: 30px;
-    justify-content: center;
-    
+.logos ul li img {
+  width: 100%;
+  height: 6.25rem;
 }
-.motos article{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 3.125rem;
-    padding: 50px;
-    text-align: center;
+
+.motos article {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 3.125rem;
+  padding: 80px;
+  text-align: center;
 }
-.motos article img{
-    width: 80%;
-    height: 80%;
+.motos article img {
+  width: 100%;
+  height: 100%;
 }
+
+.card-body {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  background-color: gray;
+  color: black;
+}
+
 /*ACCESORIOS*/
-.accesorios{
-    display: flex;
-    justify-content:space-evenly;
-    list-style:none;
-    text-align: center;
-    padding: 30px;
-    font-size: 20px;
+.accesorios {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
 }
-.accesorios-2{
-    display: grid;
+
+.accesorios-2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 3.125rem;
+  padding: 80px;
+  text-align: center;
+}
+.accesorios-2 div img {
+  width: 100%;
+  height: 100%;
+}
+
+/*CONTACTOS*/
+.contactos section {
+  margin: 50px;
+  padding: 50px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-contact {
+  list-style: none;
+}
+
+/*FINANCIACION*/
+.financiacion section {
+  background-color: cadetblue;
+  padding: 20px;
+}
+.financiacion .imagenfinanciacion img {
+  width: 100%;
+  height: 300px;
+}
+.financiacion .ahorro {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  font-size: 15px;
+}
+footer div ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 0px;
+}
+footer div h3 {
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .main-back {
+    width: 100%;
+    height: 800px;
+  }
+  /*motos*/
+  .logos ul li img {
+    width: 220px;
+    height: 150px;
+  }
+  .motos article {
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: center;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+  .motos div img {
+    width: 100%;
+    height: 100%;
+  }
+  /*accesorios*/
+  .accesorios li img {
+    width: 220px;
+    height: 220px;
+  }
+  .accesorios-2 {
+    width: 100%;
+    height: 100%;
     column-gap: 30px;
     row-gap: 3.125rem;
-    padding: 50px;
+  }
+  .accesorios-2 div img {
+    width: 100%;
+    height: 100%;
+  }
+  /*contacto*/
+  .mapas {
+    display: flex;
+    flex-direction: column;
+  }
+  /*financiacion*/
+  .ahorro {
+    flex-direction: column;
     text-align: center;
+  }
+  .ahorro article img {
+    width: 600px;
+    height: 300px;
+  }
+  .ahorro article iframe {
+    width: 900px;
+    height: 450px;
+  }
 }
-.accesorios-2 div img{
-    width: 80%;
-    height: 80%;
-    }
-/*CONTACTOS*/
-.contactos section{
-    margin: 50px;
-    padding: 50px;
-    background-color: cadetblue;
+@media (max-width: 768px) {
+  /*responsive index*/
+  .main-back {
+    width: 100%;
+    height: 500px;
+  }
+  .main-back h1 {
+    font-size: 50px;
+  }
+  /* responsive motos*/
+  .motos article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .motos article div img {
+    width: 100%;
+    height: 100%;
+  }
+  header {
+    flex-direction: column;
+  }
+  .logos ul li img {
+    width: 170px;
+    height: 100px;
+  }
+  /*responsive accesorios*/
+  .accesorios li img {
+    width: 220px;
+    height: 220px;
+  }
+  .accesorios-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .accesorios-2 div img {
+    width: 100%;
+    height: 100%;
+  }
+  /*financiacion*/
+  .ahorro article img {
+    width: 600px;
+    height: 200px;
+  }
+  .ahorro article iframe {
+    width: 600px;
+    height: 300px;
+  }
+  /*footer*/
+  footer {
+    font-size: 12px;
+  }
 }
-.form-contact{
-    list-style: none;
-}
-/*FINANCIACION*/
-.financiacion section{
-    background-color: cadetblue;
-}
-.imagenfinanciacion img{
+@media (max-width: 320px) {
+  /*barra*/
+  /*index*/
+  .main-back {
     width: 100%;
     height: 300px;
-}
-/*FOOTER*/
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    background-color: black;
+  }
+  .main-back h1 {
+    font-size: 30px;
+  }
+  .main-back div {
+    font-size: 10px;
+    color: red;
+    text-align: start;
+    border: 16px;
+  }
+  /*motos*/
+  .menu-nav {
+    flex-direction: column;
+    gap: 0.625rem;
+    text-align: center;
+  }
+  .logos ul {
+    flex-direction: column;
+  }
+  .logos ul li img {
+    width: 250px;
+    height: 100px;
+  }
+  .motos article {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .motos article div img {
     width: 100%;
-    font-size: 15px;
-}
-footer div ul{
+    height: 100%;
+  }
+  main {
+    text-align: center;
+  }
+  /*accesorios*/
+  .accesorios {
+    flex-direction: column;
+  }
+  .accesorios li img {
+    width: 250px;
+    height: 250px;
+  }
+  .accesorios-2 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .accesorios-2 div img {
+    width: 100%;
+    height: 100%;
+  }
+  /*financiacion*/
+  .financiacion .imagenfinanciacion {
+    display: none;
+  }
+  .financiacion section form ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
-    margin-left: 0px;
+    text-align: start;
+  }
+  .financiacion .ahorro article img {
+    width: 250px;
+    height: 150px;
+  }
+  .financiacion .ahorro article iframe {
+    width: 250px;
+    height: 200px;
+  }
+  /*contacto*/
+  .contactos section {
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: start;
+    align-items: center;
+  }
+  .contactos .mapas {
+    align-items: center;
+  }
+  .contactos .mapas iframe {
+    width: 280px;
+    height: 280px;
+  }
+  /*footer*/
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer div h3 {
+    font-size: 15px;
+  }
 }
-footer div h3{
-    font-size: 20px;
-}
-@media (max-width:1024px){
-    .main-back{
-        width: 100%;
-        height: 800px;
-    }
-    .motos article{
-        row-gap: 4.375rem;
-        margin-bottom: 20px;
-    }
-    .accesorios-2{
-        row-gap: 4.375rem;
-        margin-bottom: 20px;
-    }
-}
-@media (max-width:768px){
-/*responsive index*/
-    .main-back{
-        width: 100%;
-        height: 500px;
-    }
-    .main-back h1{
-        font-size: 50px;
-    }
 
-/* responsive motos*/
-    .motos article{
-        grid-template-columns: repeat(2,1fr);
-    }
-    header{
-        flex-direction: column;
-    }
-/*responsive accesorios*/
-    .accesorios li img{
-        width: 220px;
-        height: 220px;
-    }
-    .accesorios-2{
-        grid-template-columns: repeat(2,1fr);
-    }
-/*footer*/
-    footer{
-        font-size: 12px;
-    }
-}
-@media (max-width:320px){
-    /*barra*/
-    
-    /*index*/
-    .main-back h1{
-        font-size: 20px;
-    }
-    .main-back div{
-        font-size: 10px;
-        color: red;
-        text-align: start;
-        border: 16px;
-    }
-    .main-back{
-        width: 100%;
-        height: 300px;
-    }
-    /*motos*/
-    .menu-nav{
-        flex-direction: column;
-        gap: .625rem;
-        text-align: center;
-    }
-    .logos ul{
-        flex-direction: column;
-    }
-    .motos article{
-        grid-template-columns: 1fr;
-        row-gap: 70px;
-    }
-    main{
-        text-align: center;
-    }
-    /*accesorios*/
-    .accesorios{
-        flex-direction: column;
-    }
-    .accesorios li img{
-        width: 250px;
-        height: 250px;
-    }
-    .accesorios-2{
-        grid-template-columns: 1fr;
-        row-gap: 4.375rem;
-    }
-    /*footer*/
-    footer{
-        flex-direction: column-reverse;
-    }
-    footer div h3{
-        font-size: 15px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

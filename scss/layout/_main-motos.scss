@@ -1,0 +1,28 @@
+/*MOTOS*/
+.logos{
+    ul{
+        list-style: none;
+        @include flexmotos;
+        li{
+            img{
+                width: 100%;
+                height: 6.25rem;
+            }
+        }
+    }
+}
+.motos article{
+    @include gridmotos;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.card-body{
+    background-color: map-get($colores, fondo1);
+    color: $color3;
+}
+.btn{
+    background-color: map-get($colores, fondo3);
+    color: $color1;
+}

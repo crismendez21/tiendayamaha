@@ -1,0 +1,72 @@
+@media (max-width:1024px){
+    .main-back{
+        width: 100%;
+        height: 800px;
+    }
+/*motos*/
+    .logos{
+        ul{
+            li{
+                img{
+                    width: 220px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    .motos{
+        article{
+            width: 100%;
+            height: 100%;
+            column-gap: 30px;
+            row-gap: 50px;
+        }
+        div{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+/*accesorios*/
+    .accesorios{
+        li{
+            img{
+                width: 220px;
+                height: 220px;
+            }
+        }
+    }
+    .accesorios-2{
+        width: 100%;
+        height: 100%;
+        column-gap: 30px;
+        row-gap: 3.125rem;
+        div{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+/*contacto*/
+    .mapas{
+        display: flex;
+        flex-direction: column;
+    }
+/*financiacion*/
+    .ahorro{
+        flex-direction: column;
+        text-align: center;
+        article{
+            img{
+                width: 600px;
+                height: 300px;
+            }
+            iframe{
+                width: 900px;
+                height: 450px;
+            }
+        }
+    }
+}

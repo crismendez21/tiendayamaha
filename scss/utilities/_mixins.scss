@@ -1,0 +1,47 @@
+@mixin flexfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+@mixin flexmotos{
+    display: flex;
+    gap: 1.25rem;
+    padding: 30px;
+    justify-content: center;
+}
+@mixin gridmotos{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 3.125rem;
+    padding: 80px;
+    text-align: center;
+}
+@mixin flexcontactos{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+@mixin flexaccesorios{
+    display: flex;
+    justify-content:space-evenly;
+    list-style:none;
+    text-align: center;
+}
+@mixin gridaccesorios{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 3.125rem;
+    padding: 80px;
+    text-align: center;
+}
