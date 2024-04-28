@@ -18,18 +18,25 @@ header nav div {
   padding: 15px;
 }
 
-.main-back {
-  width: 100%;
-  height: 1080px;
-  color: black;
-  background-image: url(../assets/img/fondo.jpg);
-  background-size: cover;
-  background-position: right;
-  padding: 15px;
+.mainIndex {
+  background-image: url(../assets/img/modern-dark-texture-background-vector.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 25px;
 }
-.main-back h1 {
-  font-size: 100px;
-  color: blue;
+.mainIndex .main-back {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/img/yamaha_mt03_2020_01.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.mainIndex .main-back h1 {
+  font-size: 80px;
+  color: #EE242B;
+}
+.mainIndex .main-back h2 {
+  color: black;
 }
 
 .navbar {
@@ -43,6 +50,11 @@ header nav div {
 .nav-link {
   font-size: 20px;
   color: white;
+}
+
+.navbar-brand img {
+  width: 300px;
+  height: 80px;
 }
 
 /*MOTOS*/
@@ -73,6 +85,10 @@ header nav div {
   width: 100%;
   height: 100%;
 }
+.motos .card {
+  box-shadow: 15px 15px;
+  border: none;
+}
 
 .card-body {
   background-color: black;
@@ -85,7 +101,10 @@ header nav div {
 }
 
 /*ACCESORIOS*/
-.accesorios {
+main {
+  padding: 25px;
+}
+main .accesorios {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -93,8 +112,11 @@ header nav div {
   padding: 30px;
   font-size: 20px;
 }
-
-.accesorios-2 {
+main .accesorios img {
+  width: 250px;
+  height: 250px;
+}
+main .accesorios-2 article {
   display: grid;
   width: 100%;
   height: 100%;
@@ -105,31 +127,48 @@ header nav div {
   padding: 80px;
   text-align: center;
 }
-.accesorios-2 div img {
+main .accesorios-2 article img {
   width: 100%;
   height: 100%;
 }
+main .accesorios-2 .card {
+  box-shadow: 15px 15px;
+  border: none;
+}
 
 /*CONTACTOS*/
+.contactos {
+  padding: 25px;
+}
 .contactos section {
-  margin: 50px;
   padding: 50px;
-  background-color: cadetblue;
   display: flex;
   justify-content: space-around;
   font-size: 18px;
   padding: 20px;
   text-align: center;
 }
+.contactos .mapas {
+  justify-content: space-around;
+  background-color: gray;
+}
 
 .form-contact {
   list-style: none;
 }
+.form-contact input {
+  width: 100%;
+}
 
 /*FINANCIACION*/
 .financiacion section {
-  background-color: cadetblue;
-  padding: 20px;
+  padding: 25px;
+}
+.financiacion section form fieldset li {
+  list-style: none;
+}
+.financiacion section form fieldset input {
+  width: 75%;
 }
 .financiacion .imagenfinanciacion img {
   width: 100%;
@@ -138,7 +177,8 @@ header nav div {
 .financiacion .ahorro {
   display: flex;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 25px;
+  background-color: gray;
 }
 
 /*FOOTER*/
@@ -223,9 +263,15 @@ footer div h3 {
     height: 500px;
   }
   .main-back h1 {
-    font-size: 50px;
+    display: none;
+  }
+  .main-back h2 {
+    display: none;
   }
   /* responsive motos*/
+  .logos ul {
+    display: none;
+  }
   .motos article {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -241,14 +287,14 @@ footer div h3 {
     height: 100px;
   }
   /*responsive accesorios*/
-  .accesorios li img {
-    width: 220px;
-    height: 220px;
+  main .accesorios li img {
+    width: 150px;
+    height: 150px;
   }
-  .accesorios-2 {
+  main .accesorios-2 article {
     grid-template-columns: repeat(2, 1fr);
   }
-  .accesorios-2 div img {
+  main .accesorios-2 article div img {
     width: 100%;
     height: 100%;
   }
@@ -266,21 +312,23 @@ footer div h3 {
     font-size: 12px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 430px) {
   /*barra*/
+  .navbar-brand img {
+    width: 180px;
+    height: 100px;
+  }
+  .container-fluid {
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
   /*index*/
-  .main-back {
+  .mainIndex {
+    font-size: 20px;
+  }
+  .mainIndex .main-back {
     width: 100%;
-    height: 300px;
-  }
-  .main-back h1 {
-    font-size: 30px;
-  }
-  .main-back div {
-    font-size: 10px;
-    color: red;
-    text-align: start;
-    border: 16px;
+    height: 400px;
   }
   /*motos*/
   .menu-nav {
@@ -289,15 +337,11 @@ footer div h3 {
     text-align: center;
   }
   .logos ul {
-    flex-direction: column;
-  }
-  .logos ul li img {
-    width: 250px;
-    height: 100px;
+    display: none;
   }
   .motos article {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 50px;
   }
   .motos article div img {
     width: 100%;
@@ -307,18 +351,18 @@ footer div h3 {
     text-align: center;
   }
   /*accesorios*/
-  .accesorios {
+  main .accesorios {
     flex-direction: column;
   }
-  .accesorios li img {
-    width: 250px;
-    height: 250px;
+  main .accesorios li img {
+    width: 200px;
+    height: 200px;
   }
-  .accesorios-2 {
+  main .accesorios-2 article {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 50px;
   }
-  .accesorios-2 div img {
+  main .accesorios-2 article div img {
     width: 100%;
     height: 100%;
   }
@@ -331,11 +375,120 @@ footer div h3 {
     text-align: start;
   }
   .financiacion .ahorro article img {
-    width: 250px;
+    width: 220px;
     height: 150px;
   }
   .financiacion .ahorro article iframe {
-    width: 250px;
+    width: 320px;
+    height: 250px;
+  }
+  /*contacto*/
+  .contactos section {
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: start;
+    align-items: center;
+  }
+  .contactos .mapas {
+    align-items: center;
+  }
+  .contactos .mapas iframe {
+    width: 320px;
+    height: 250px;
+  }
+  /*footer*/
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer div h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 380px) {
+  /*barra*/
+  .navbar-brand img {
+    width: 160px;
+    height: 80px;
+  }
+  .container-fluid {
+    padding: 10px;
+  }
+  /*index*/
+  .mainIndex {
+    font-size: 15px;
+  }
+  .mainIndex .main-back {
+    width: 100%;
+    height: 200px;
+  }
+  .mainIndex .main-back h1 {
+    display: none;
+  }
+  .mainIndex .main-back div {
+    display: none;
+  }
+  .main-back {
+    width: 100%;
+    height: 300px;
+  }
+  .main-back h1 {
+    display: none;
+  }
+  .main-back div {
+    display: none;
+  }
+  /*motos*/
+  .menu-nav {
+    flex-direction: column;
+    gap: 0.625rem;
+    text-align: center;
+  }
+  .logos ul {
+    display: none;
+  }
+  .motos article {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+  .motos article div img {
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    text-align: center;
+  }
+  /*accesorios*/
+  main .accesorios {
+    flex-direction: column;
+  }
+  main .accesorios li img {
+    width: 200px;
+    height: 200px;
+  }
+  main .accesorios-2 article {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+  main .accesorios-2 article div img {
+    width: 100%;
+    height: 100%;
+  }
+  /*financiacion*/
+  .financiacion .imagenfinanciacion {
+    display: none;
+  }
+  .financiacion section form ul {
+    list-style: none;
+    text-align: start;
+  }
+  .financiacion .ahorro article img {
+    width: 220px;
+    height: 150px;
+  }
+  .financiacion .ahorro article iframe {
+    width: 270px;
     height: 200px;
   }
   /*contacto*/
@@ -351,8 +504,113 @@ footer div h3 {
     align-items: center;
   }
   .contactos .mapas iframe {
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
+  }
+  /*footer*/
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer div h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  /*barra*/
+  .container-fluid {
+    padding: 10px;
+  }
+  /*index*/
+  .mainIndex {
+    font-size: 12px;
+  }
+  .mainIndex .main-back {
+    width: 100%;
+    height: 300px;
+  }
+  .mainIndex .main-back h1 {
+    display: none;
+  }
+  .mainIndex .main-back div {
+    display: none;
+  }
+  .main-back {
+    width: 100%;
+    height: 300px;
+  }
+  .main-back h1 {
+    display: none;
+  }
+  .main-back div {
+    display: none;
+  }
+  /*motos*/
+  .menu-nav {
+    flex-direction: column;
+    gap: 0.625rem;
+    text-align: center;
+  }
+  .logos ul {
+    display: none;
+  }
+  .motos article {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .motos article div img {
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    text-align: center;
+  }
+  /*accesorios*/
+  main .accesorios {
+    flex-direction: column;
+  }
+  main .accesorios li img {
+    width: 200px;
+    height: 200px;
+  }
+  main .accesorios-2 article {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  main .accesorios-2 article div img {
+    width: 100%;
+    height: 100%;
+  }
+  /*financiacion*/
+  .financiacion .imagenfinanciacion {
+    display: none;
+  }
+  .financiacion section form ul {
+    list-style: none;
+    text-align: start;
+  }
+  .financiacion .ahorro article img {
+    width: 220px;
+    height: 150px;
+  }
+  .financiacion .ahorro article iframe {
+    width: 220px;
+    height: 200px;
+  }
+  /*contacto*/
+  .contactos section {
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: start;
+    align-items: center;
+  }
+  .contactos .mapas {
+    align-items: center;
+  }
+  .contactos .mapas iframe {
+    width: 250px;
+    height: 250px;
   }
   /*footer*/
   footer {

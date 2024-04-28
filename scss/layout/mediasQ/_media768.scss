@@ -4,11 +4,19 @@
             width: 100%;
             height: 500px;
             h1{
-                font-size: 50px;
+                display: none;
+            }
+            h2{
+                display: none;
             }
         }
     
     /* responsive motos*/
+        .logos{
+            ul{
+                display: none;
+            }
+        }
         .motos{
             article{
                 grid-template-columns: repeat(2,1fr);
@@ -34,22 +42,26 @@
             }
         }
     /*responsive accesorios*/
-        .accesorios{
+        main{
+            .accesorios{
                 li{
                     img{
-                        width: 220px;
-                        height: 220px;
+                        width: 150px;
+                        height: 150px;
                     }
                 }
         }
         .accesorios-2{
-            grid-template-columns: repeat(2,1fr);
-            div{
-                img{
-                    width: 100%;
-                    height: 100%;
+            article{
+                grid-template-columns: repeat(2,1fr);
+                div{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
+        }
         }
     /*financiacion*/
         .ahorro{

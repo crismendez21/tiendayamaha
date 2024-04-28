@@ -1,12 +1,18 @@
 /*CONTACTOS*/
 .contactos{
+    padding: 25px;
     section{
-        margin: 50px;
         padding: 50px;
-        background-color: $background-color1;
         @include flexcontactos;  
+    }
+    .mapas{
+        justify-content: space-around;
+        background-color: gray;
     }
 }
 .form-contact{
     list-style: none;
+    input{
+        width: 100%;
+    }
 }

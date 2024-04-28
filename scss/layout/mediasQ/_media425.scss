@@ -1,30 +1,21 @@
-@media (max-width:320px){
+@media (max-width:430px){
     /*barra*/
+    .navbar-brand{
+        img{
+            width: 180px;
+            height: 100px;
+        }
+    }
     .container-fluid{
+        flex-direction: row-reverse;
         padding: 10px;
     }
     /*index*/
     .mainIndex{
-        font-size: 12px;
+        font-size: 20px;
         .main-back{
             width: 100%;
-            height: 300px;
-            h1{
-                display: none;
-            }
-            div{
-                display: none;
-            }
-        }
-    }
-    .main-back{
-        width: 100%;
-        height: 300px;
-        h1{
-            display: none;
-        }
-        div{
-            display: none;
+            height: 400px;
         }
     }
     /*motos*/
@@ -41,7 +32,7 @@
     .motos{
         article{
             grid-template-columns: 1fr;
-            padding: 20px;
+            padding: 50px;
             div{
                 img{
                     width: 100%;
@@ -67,7 +58,7 @@
         .accesorios-2{
             article{
                 grid-template-columns: 1fr;
-                padding: 20px;
+                padding: 50px;
                 div{
                     img{
                         width: 100%;
@@ -97,8 +88,8 @@
                     height: 150px;
                 }
                 iframe{
-                    width: 220px;
-                    height: 200px;
+                    width: 320px;
+                    height: 250px;
                 }
             }
         }
@@ -116,7 +107,7 @@
         .mapas{
                 align-items: center;
                 iframe{
-                    width: 250px;
+                    width: 320px;
                     height: 250px;
             }
         }

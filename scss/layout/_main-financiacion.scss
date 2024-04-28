@@ -1,8 +1,17 @@
 /*FINANCIACION*/
 .financiacion{
     section{
-        background-color: $background-color1;
-        padding: 20px;
+        padding: 25px;
+        form{
+            fieldset{
+                li{
+                    list-style: none;
+                }
+                input{
+                    width: 75%;
+                }
+            }
+        }
     }
     .imagenfinanciacion{
         img{
@@ -13,7 +22,8 @@
     .ahorro{
         display: flex;
         justify-content: space-evenly;
-        padding: 20px;
+        padding: 25px;
+        background-color: gray;
     }
     
 }
